@@ -10,7 +10,6 @@ const users = {
 };
 
 const login = (req, res) => {
-    console.log("seprate");
     const { username, password } = req.body;
     if (!username || !password || users[username] !== password) {
         return res.status(401).end();
