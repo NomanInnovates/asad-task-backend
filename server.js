@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // Import route handlers
-const { login, getCountryInfo, logout } = require("./handlers");
+const { login, getCountryInfo, logout } = require("./controllers");
 
 // Define routes
 app.post("/login", login);
